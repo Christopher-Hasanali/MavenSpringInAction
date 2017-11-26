@@ -1,0 +1,5 @@
+target/
+MavenSpringInAction.iml
+.idea/vcs.xml
+.idea/libraries/
+.gitignore
