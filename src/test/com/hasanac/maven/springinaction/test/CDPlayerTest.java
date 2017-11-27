@@ -4,6 +4,7 @@ package com.hasanac.maven.springinaction.test;
 import com.hasanac.maven.springinaction.CDPlayerConfig;
 import com.hasanac.maven.springinaction.CompactDisc;
 import com.hasanac.maven.springinaction.MagicBean;
+import com.hasanac.maven.springinaction.MainCourse;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,6 +20,10 @@ public class CDPlayerTest {
 
     @Autowired(required = false)
     private MagicBean mb;
+
+    // To test injection of beans via custom qualifiers
+    @Autowired
+    private MainCourse mc;
 
     @Test
     public void cdShouldNotBeNull() {

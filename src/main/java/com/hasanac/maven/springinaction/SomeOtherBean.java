@@ -9,7 +9,6 @@ public class SomeOtherBean {
     @Bean
     @Conditional(MagicExistsCondition.class)
     public MagicBean magicBean() {
-        System.out.println("CCCCCCCCCHHHHHHHHHHRRRRRRRRRRIIIIISSSSSS");
         return new MagicBean();
     }
 }

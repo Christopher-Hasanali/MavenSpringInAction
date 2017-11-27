@@ -8,7 +8,6 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 public class MagicExistsCondition implements Condition {
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         Environment env = context.getEnvironment();
-        System.out.println("OOOOOOOOOOOOOOOOO:" + env.containsProperty("magic"));
         return env.containsProperty("magic");
     }
 }
